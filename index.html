@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabras de Escritorio</title>
+    <meta name="author" content="KV">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- VISTA 1: MENÚ PRINCIPAL -->
+        <section id="view-main-menu" class="view active">
+            <div class="menu-card">
+                <img class="brand-logo brand-logo--cover" src="img/logo.png" alt="Dios contra Dios">
+                <h1>Pasapalabras</h1>
+                <p>Aplicación interactiva portátil para concursos y educación</p>
+                <div class="menu-buttons">
+                    <button id="btn-goto-setup" class="btn primary">Nuevo / Configurar Juego</button>
+                    <button id="btn-goto-load" class="btn secondary">Cargar Juego Guardado</button>
+                    <input type="file" id="import-file-input" accept=".json,.txt,application/json,text/plain" style="display: none;">
+                    <button id="btn-import-game" class="btn accent">Importar Juego desde Archivo</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA 2: CONFIGURACIÓN DE JUEGO Y RULETAS -->
+        <section id="view-setup" class="view">
+            <div class="setup-card">
+                <div class="setup-heading">
+                    <h2>Configuración del Juego</h2>
+                    <img class="brand-logo brand-logo--corner" src="img/logo.png" alt="Dios contra Dios">
+                </div>
+                <div class="form-group">
+                    <label for="input-game-name">Nombre del Juego:</label>
+                    <input type="text" id="input-game-name" placeholder="Ej: Concurso VLab">
+                </div>
+                <div class="form-group">
+                    <label for="input-roulette-count">Cantidad de Ruletas:</label>
+                    <input type="number" id="input-roulette-count" min="1" max="5" value="1">
+                </div>
+
+                <div id="roulettes-config-container">
+                    <!-- Contenedor dinámico para configurar cada ruleta -->
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btn-back-to-menu" class="btn secondary">Volver al Menú</button>
+                    <button id="btn-start-game" class="btn primary">Iniciar Partida</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA 3: PANTALLA DE JUEGO -->
+        <section id="view-game" class="view">
+            <header class="game-header">
+                <img class="brand-logo brand-logo--game" src="img/logo.png" alt="Dios contra Dios">
+                <div class="game-info">
+                    <h2 id="display-game-name">Nombre del Juego</h2>
+                    <div id="roulette-tabs" class="roulette-tabs">
+                        <!-- Pestañas para cambiar entre ruletas independientes -->
+                    </div>
+                </div>
+                <div class="game-global-controls">
+                    <button id="btn-game-menu" class="btn secondary">Menú Principal</button>
+                    <button id="btn-reset-roulette" class="btn accent">Reiniciar Ruleta Actual</button>
+                </div>
+            </header>
+
+            <div class="game-layout">
+                <!-- Ruleta Circular de Letras -->
+                <div class="roulette-container">
+                    <div id="roulette-wheel" class="roulette-wheel">
+                        <!-- Las letras se generan dinámicamente mediante JS -->
+                    </div>
+                    <div class="roulette-center">
+                        <span id="center-current-letter">-</span>
+                    </div>
+                </div>
+
+                <!-- Panel de Control del Presentador y Preguntas -->
+                <div class="presenter-panel">
+                    <div class="question-box">
+                        <span id="label-current-letter" class="badge-letter">Letra: -</span>
+                        <p id="text-question" class="question-text">Selecciona una letra en la ruleta para ver la pregunta.</p>
+
+                        <div id="answer-container" class="answer-container hidden">
+                            <strong>Respuesta Correcta:</strong>
+                            <p id="text-answer">-</p>
+                        </div>
+                    </div>
+
+                    <div class="control-actions">
+                        <button id="btn-show-answer" class="btn secondary" disabled>Ver Respuesta</button>
+                        <button id="btn-mark-correct" class="btn success" disabled>Correcta (Verde)</button>
+                        <button id="btn-mark-pass" class="btn danger" disabled>Pasar (Rojo)</button>
+                    </div>
+
+                    <div class="wildcards-section">
+                        <h3>Comodines</h3>
+                        <div class="wildcards-placeholder">
+                            <button id="btn-wildcard-pass" class="btn wildcard-btn" data-wildcard="pass" disabled>Comodín 1: Pasar atrás</button>
+                            <button id="btn-wildcard-choose" class="btn wildcard-btn" data-wildcard="choose" disabled>Comodín 2: Elegir compañero</button>
+                            <button id="btn-wildcard-bible" class="btn wildcard-btn" data-wildcard="bible" disabled>Comodín 3: Biblia (1 min)</button>
+                        </div>
+                        <p id="wildcard-status" class="wildcard-status" aria-live="polite">Selecciona una pregunta para usar un comodín.</p>
+                        <p id="wildcard-timer" class="wildcard-timer" aria-live="polite"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts modularizados -->
+    <script src="js/storage.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

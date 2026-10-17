@@ -1,0 +1,528 @@
+:root {
+    --bg-color: #0b0b0f;
+    --card-bg: #14141a;
+    --text-color: #f3f3f6;
+    --text-muted: #9c9ca6;
+    --primary: #d4af37;
+    --primary-hover: #b89728;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --neutral: #272733;
+    --neutral-hover: #383844;
+    --accent: #f59e0b;
+    --accent-hover: #d97706;
+    --border: #2a2a38;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    max-height: 800px;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.view {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.view.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn.primary { background-color: var(--primary); color: var(--bg-color); }
+.btn.primary:hover { background-color: var(--primary-hover); }
+
+.btn.secondary { background-color: var(--neutral); color: var(--text-color); }
+.btn.secondary:hover { background-color: var(--neutral-hover); }
+
+.btn.accent { background-color: var(--accent); color: var(--bg-color); }
+.btn.accent:hover { background-color: var(--accent-hover); }
+
+.btn.success { background-color: var(--success); color: white; }
+.btn.success:hover { background-color: #16a34a; }
+
+.btn.danger { background-color: var(--danger); color: white; }
+.btn.danger:hover { background-color: #dc2626; }
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#view-main-menu {
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.menu-card {
+    flex: 0 0 auto;
+    margin-block: auto;
+    background-color: var(--card-bg);
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+    width: 100%;
+    max-width: 500px;
+}
+
+.menu-card h1 {
+    font-family: 'Gochi Hand', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.menu-card p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.brand-logo {
+    display: block;
+    object-fit: contain;
+}
+
+.brand-logo--cover {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0.75rem;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.setup-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.setup-card h2 {
+    margin-bottom: 1.5rem;
+}
+
+.setup-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.setup-heading h2 {
+    min-width: 0;
+}
+
+.brand-logo--corner {
+    width: 88px;
+    height: 52px;
+    flex: 0 0 88px;
+}
+
+.brand-logo--game {
+    width: 128px;
+    height: 76px;
+    flex: 0 0 128px;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.roulette-config-item {
+    background: rgba(11, 11, 15, 0.5);
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
+.roulette-config-item h4 {
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.question-entry-list {
+    display: grid;
+    gap: 0.75rem;
+    padding-right: 0.5rem;
+}
+
+.question-entry {
+    display: grid;
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.question-entry-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--neutral);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.question-entry-fields {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 0.75rem;
+}
+
+.question-entry-fields .form-group {
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+.question-entry-fields label {
+    font-size: 0.9rem;
+}
+
+.question-entry-fields textarea {
+    resize: vertical;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.game-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.roulette-tabs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-btn {
+    padding: 0.35rem 0.85rem;
+    background-color: var(--neutral);
+    border: none;
+    border-radius: 6px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.tab-btn.active {
+    background-color: var(--primary);
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.game-global-controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    flex: 1;
+    min-height: 0;
+}
+
+.roulette-container {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.roulette-wheel {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.roulette-letter-node {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: var(--neutral);
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.roulette-letter-node:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.roulette-letter-node.state-correct {
+    background-color: var(--success) !important;
+}
+
+.roulette-letter-node.state-pass {
+    background-color: var(--danger) !important;
+}
+
+.roulette-letter-node.active-selection {
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+.roulette-center {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border);
+}
+
+#center-current-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.presenter-panel {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.question-box {
+    background-color: rgba(11, 11, 15, 0.6);
+    padding: 1.25rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.badge-letter {
+    align-self: flex-start;
+    background-color: var(--primary);
+    color: var(--bg-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.question-text {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.answer-container {
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 1px solid var(--success);
+    padding: 0.75rem;
+    border-radius: 6px;
+}
+
+.answer-container.hidden {
+    display: none;
+}
+
+.control-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.wildcards-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.wildcards-placeholder {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.wildcard-btn {
+    min-width: 0;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    padding: 0.65rem 0.5rem;
+    color: #111318;
+}
+
+.wildcard-btn[data-wildcard="pass"] {
+    background-color: #d4a72c;
+}
+
+.wildcard-btn[data-wildcard="pass"]:not(:disabled):hover {
+    background-color: #e4ba48;
+}
+
+.wildcard-btn[data-wildcard="choose"] {
+    background-color: #55b982;
+}
+
+.wildcard-btn[data-wildcard="choose"]:not(:disabled):hover {
+    background-color: #6ac994;
+}
+
+.wildcard-btn[data-wildcard="bible"] {
+    background-color: #57a6b7;
+}
+
+.wildcard-btn[data-wildcard="bible"]:not(:disabled):hover {
+    background-color: #6ab8c7;
+}
+
+.wildcard-status,
+.wildcard-timer {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: 0.65rem;
+}
+
+.wildcard-timer {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .wildcards-placeholder {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .question-entry-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .menu-card {
+        padding: 2rem 1.25rem;
+    }
+
+    .menu-card h1 {
+        font-size: 2.25rem;
+    }
+}
