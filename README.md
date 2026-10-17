@@ -2,6 +2,8 @@
 
 Aplicación local para organizar y presentar concursos de Pasapalabras con varias ruletas, una por equipo.
 
+![Animación de Pasapalabras](https://media.giphy.com/media/mGo8dkPOF6GLm/giphy.gif)
+
 ## Uso
 
 1. Abre `index.html` en un navegador moderno.
