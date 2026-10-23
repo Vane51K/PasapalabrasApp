@@ -107,11 +107,23 @@
                             <button id="btn-wildcard-bible" class="btn wildcard-btn" data-wildcard="bible" disabled>Comodín 3: Biblia (1 min)</button>
                         </div>
                         <p id="wildcard-status" class="wildcard-status" aria-live="polite">Selecciona una pregunta para usar un comodín.</p>
-                        <p id="wildcard-timer" class="wildcard-timer" aria-live="polite"></p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div id="bible-overlay" class="bible-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="bible-overlay-title">
+            <div class="bible-session-panel" tabindex="-1">
+                <h2 id="bible-overlay-title">Consulta bíblica</h2>
+                <p class="bible-session-instructions">Busca esta cita y responde antes de que termine el tiempo.</p>
+                <p id="bible-citation" class="bible-citation"></p>
+                <p id="bible-timer" class="bible-session-timer" aria-live="assertive">01:00</p>
+                <div class="bible-session-actions">
+                    <button id="btn-bible-pause" class="btn secondary" type="button">Pausar</button>
+                    <button id="btn-bible-end" class="btn primary" type="button">Terminar y responder</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts modularizados -->

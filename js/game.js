@@ -7,9 +7,12 @@ class GameManager {
         this.activeLetter = null;
         this.bibleTimerInterval = null;
         this.bibleTimerLetter = null;
+        this.bibleTimerRemaining = 0;
+        this.bibleTimerPaused = false;
+        this.bibleSessionActive = false;
+    }
 
-
-
+    initGame(gameState) {
         this.clearBibleTimer();
         this.state = gameState;
         this.activeRouletteIndex = 0;
@@ -22,7 +25,7 @@ class GameManager {
     }
 
     selectLetter(letter) {
-        if (this.bibleTimerInterval && letter !== this.bibleTimerLetter) {
+        if (this.bibleSessionActive && letter !== this.bibleTimerLetter) {
             this.setWildcardStatus("Termina la consulta bíblica antes de cambiar de pregunta.");
             return;
         }
@@ -66,7 +69,7 @@ class GameManager {
     }
 
     markState(status) {
-        if (!this.activeLetter) return;
+        if (!this.activeLetter || this.bibleSessionActive) return;
         const roulette = this.getCurrentRoulette();
         const item = roulette.questions.find(q => q.letra === this.activeLetter);
         if (item) {
@@ -85,7 +88,7 @@ class GameManager {
         const roulette = this.getCurrentRoulette();
         const item = roulette?.questions.find(question => question.letra === this.activeLetter);
         const wildcardUsed = roulette?.wildcardsUsed || {};
-        const timerActive = Boolean(this.bibleTimerInterval);
+        const timerActive = this.bibleSessionActive;
 
         document.querySelectorAll("[data-wildcard]").forEach(button => {
             const type = button.dataset.wildcard;
@@ -97,6 +100,9 @@ class GameManager {
 
         document.querySelectorAll(".tab-btn").forEach(button => {
             button.disabled = timerActive;
+        });
+        ["btn-game-menu", "btn-reset-roulette"].forEach(id => {
+            document.getElementById(id).disabled = timerActive;
         });
         ["btn-show-answer", "btn-mark-correct", "btn-mark-pass"].forEach(id => {
             const button = document.getElementById(id);
@@ -110,30 +116,82 @@ class GameManager {
             this.bibleTimerInterval = null;
         }
         this.bibleTimerLetter = null;
+        this.bibleTimerRemaining = 0;
+        this.bibleTimerPaused = false;
+        this.bibleSessionActive = false;
 
         const timer = document.getElementById("wildcard-timer");
         if (timer) timer.textContent = "";
+        document.getElementById("bible-citation").textContent = "";
+        document.getElementById("bible-overlay").classList.add("hidden");
     }
 
     startBibleTimer() {
-        const timer = document.getElementById("wildcard-timer");
-        let secondsRemaining = 60;
-        this.bibleTimerLetter = this.activeLetter;
+        const roulette = this.getCurrentRoulette();
+        const item = roulette?.questions.find(question => question.letra === this.activeLetter);
+        if (!item) return;
 
-        const updateTimer = () => {
-            timer.textContent = `Tiempo para consultar la Biblia: ${secondsRemaining} s`;
-            if (secondsRemaining === 0) {
-                this.clearBibleTimer();
-                this.setWildcardStatus("Terminó el tiempo de consulta. Ya puedes responder.");
-                this.updateWildcardControls();
+        this.bibleTimerRemaining = 60;
+        this.bibleTimerLetter = this.activeLetter;
+        this.bibleTimerPaused = false;
+        this.bibleSessionActive = true;
+        document.getElementById("bible-citation").textContent = item.cita?.trim()
+            || "No se cargó una cita para esta pregunta.";
+        document.getElementById("bible-overlay").classList.remove("hidden");
+        document.getElementById("btn-bible-pause").textContent = "Pausar";
+        this.updateBibleTimerDisplay();
+        this.startBibleTimerInterval();
+        this.updateWildcardControls();
+        document.getElementById("btn-bible-pause").focus();
+    }
+
+    updateBibleTimerDisplay() {
+        const minutes = Math.floor(this.bibleTimerRemaining / 60);
+        const seconds = this.bibleTimerRemaining % 60;
+        document.getElementById("bible-timer").textContent =
+            `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    startBibleTimerInterval() {
+        this.bibleTimerInterval = window.setInterval(() => {
+            this.bibleTimerRemaining -= 1;
+            if (this.bibleTimerRemaining <= 0) {
+                this.endBibleTimer(true);
                 return;
             }
-            secondsRemaining -= 1;
-        };
+            this.updateBibleTimerDisplay();
+        }, 1000);
+    }
 
-        updateTimer();
-        this.bibleTimerInterval = window.setInterval(updateTimer, 1000);
+    toggleBibleTimer() {
+        if (!this.bibleSessionActive) return;
+
+        const pauseButton = document.getElementById("btn-bible-pause");
+        if (this.bibleTimerPaused) {
+            this.bibleTimerPaused = false;
+            pauseButton.textContent = "Pausar";
+            this.setWildcardStatus("La consulta bíblica continúa.");
+            this.startBibleTimerInterval();
+        } else {
+            window.clearInterval(this.bibleTimerInterval);
+            this.bibleTimerInterval = null;
+            this.bibleTimerPaused = true;
+            pauseButton.textContent = "Reanudar";
+            this.setWildcardStatus("Consulta pausada. La cita sigue visible.");
+        }
+    }
+
+    endBibleTimer(expired = false) {
+        if (!this.bibleSessionActive) return;
+
+        this.clearBibleTimer();
+        this.setWildcardStatus(expired
+            ? "Terminó el tiempo de consulta. Ya puedes responder."
+            : "Consulta terminada. Ya puedes registrar la respuesta.");
         this.updateWildcardControls();
+
+        const answerButton = document.getElementById("btn-show-answer");
+        if (!answerButton.disabled) answerButton.focus();
     }
 
     useWildcard(type) {
@@ -223,7 +281,7 @@ class GameManager {
             btn.className = `tab-btn ${index === this.activeRouletteIndex ? 'active' : ''}`;
             btn.textContent = roulette.name;
             btn.addEventListener("click", () => {
-                if (this.bibleTimerInterval) {
+                if (this.bibleSessionActive) {
                     this.setWildcardStatus("Termina la consulta bíblica antes de cambiar de equipo.");
                     return;
                 }

@@ -21,6 +21,7 @@ RULETA: Equipo 1
 LETRA: G
 PREGUNTA: Animal doméstico que suele maullar
 RESPUESTA: Gato
+CITA: Génesis 1:1
 
 RULETA: Equipo 2
 LETRA: S
@@ -29,6 +30,8 @@ RESPUESTA: Estrellas
 ```
 
 La aplicación muestra **EMPIEZA POR** si la respuesta comienza con la letra y **CONTIENE** si la incluye en otra posición. Una letra puede repetirse entre equipos, pero no dentro de la misma ruleta.
+
+`CITA:` es opcional. Si la incluyes, la referencia se mantiene oculta hasta activar **Usar la Biblia**; entonces aparece en grande durante 60 segundos. El contador se puede pausar, reanudar o terminar antes para responder.
 
 ## Partidas guardadas
 

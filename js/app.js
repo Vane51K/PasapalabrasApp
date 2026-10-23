@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const lines = block.split("\n").map(line => line.trim()).filter(Boolean);
 
             for (const line of lines) {
-                const match = line.match(/^(RULETA|LETRA|PREGUNTA|RESPUESTA)\s*:\s*(.*)$/i);
+                const match = line.match(/^(RULETA|LETRA|PREGUNTA|RESPUESTA|CITA)\s*:\s*(.*)$/i);
                 if (!match) {
-                    throw new Error(`Bloque ${index + 1}: usa las etiquetas RULETA:, LETRA:, PREGUNTA: y RESPUESTA:.`);
+                    throw new Error(`Bloque ${index + 1}: usa RULETA:, LETRA:, PREGUNTA:, RESPUESTA: y, opcionalmente, CITA:.`);
                 }
 
                 const field = match[1].toLocaleLowerCase("es");
@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 letra,
                 pregunta: fields.pregunta,
                 respuesta: fields.respuesta,
+                cita: fields.cita || "",
                 pista,
                 status: "pending"
             });
@@ -270,5 +271,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll("[data-wildcard]").forEach(button => {
         button.addEventListener("click", () => gameManager.useWildcard(button.dataset.wildcard));
+    });
+
+    document.getElementById("btn-bible-pause").addEventListener("click", () => {
+        gameManager.toggleBibleTimer();
+    });
+
+    document.getElementById("btn-bible-end").addEventListener("click", () => {
+        gameManager.endBibleTimer();
     });
 });
