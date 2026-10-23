@@ -34,16 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!normalizedText) throw new Error("El archivo está vacío.");
 
         const blocks = normalizedText.split(/\n\s*\n/).filter(block => block.trim());
-        const roulettesByName = new Map();
+        const maquetasByName = new Map();
 
         blocks.forEach((block, index) => {
             const fields = {};
             const lines = block.split("\n").map(line => line.trim()).filter(Boolean);
 
             for (const line of lines) {
-                const match = line.match(/^(RULETA|LETRA|PREGUNTA|RESPUESTA|CITA(?:\s+BÍBLICA)?)\s*:\s*(.*)$/i);
+                const match = line.match(/^(MAQUETA|RULETA|LETRA|PREGUNTA|RESPUESTA|CITA(?:\s+BÍBLICA)?)\s*:\s*(.*)$/i);
                 if (!match) {
-                    throw new Error(`Bloque ${index + 1}: usa RULETA:, LETRA:, PREGUNTA:, RESPUESTA: y, opcionalmente, CITA: o CITA BÍBLICA:.`);
+                    throw new Error(`Bloque ${index + 1}: usa RULETA:, LETRA:, PREGUNTA:, RESPUESTA:, CITA: y, opcionalmente, MAQUETA:.`);
                 }
 
                 const label = match[1].toLocaleLowerCase("es");
@@ -58,23 +58,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error(`Bloque ${index + 1}: completa LETRA, PREGUNTA y RESPUESTA.`);
             }
 
+            const maquetaName = fields.maqueta
+                ? (/^maqueta\b/i.test(fields.maqueta) ? fields.maqueta : `Maqueta ${fields.maqueta}`)
+                : "Maqueta 1";
+            const maquetaKey = maquetaName.toLocaleLowerCase("es");
+            if (!maquetasByName.has(maquetaKey)) {
+                maquetasByName.set(maquetaKey, {
+                    name: maquetaName,
+                    roulettesByName: new Map()
+                });
+            }
+
+            const maqueta = maquetasByName.get(maquetaKey);
             const rouletteName = fields.ruleta || "Ruleta 1";
             const rouletteKey = rouletteName.toLocaleLowerCase("es");
-            if (!roulettesByName.has(rouletteKey)) {
-                roulettesByName.set(rouletteKey, {
+            if (!maqueta.roulettesByName.has(rouletteKey)) {
+                maqueta.roulettesByName.set(rouletteKey, {
                     name: rouletteName,
                     questions: [],
                     usedLetters: new Set()
                 });
             }
 
-            const roulette = roulettesByName.get(rouletteKey);
+            const roulette = maqueta.roulettesByName.get(rouletteKey);
             const letra = fields.letra.normalize("NFC").toLocaleUpperCase("es");
             if (!ALPHABET.includes(letra)) {
                 throw new Error(`Bloque ${index + 1}: la letra ${fields.letra} no está disponible en la ruleta.`);
             }
             if (roulette.usedLetters.has(letra)) {
-                throw new Error(`Bloque ${index + 1}: la letra ${letra} aparece más de una vez en ${roulette.name}.`);
+                throw new Error(`Bloque ${index + 1}: la letra ${letra} aparece más de una vez en ${roulette.name} de ${maqueta.name}.`);
             }
             roulette.usedLetters.add(letra);
 
@@ -96,9 +108,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return {
             name: fileName.replace(/\.txt$/i, "").trim() || "Partida importada",
-            roulettes: Array.from(roulettesByName.values(), ({ name, questions }) => ({ name, questions }))
+            maquetas: Array.from(maquetasByName.values(), ({ name, roulettesByName }) => ({
+                name,
+                roulettes: Array.from(roulettesByName.values(), ({ name: rouletteName, questions }) => ({
+                    name: rouletteName,
+                    questions
+                }))
+            }))
         };
     }
+
+    function loadTextMaqueta(textGame, maqueta) {
+        const gameState = {
+            name: `${textGame.name} - ${maqueta.name}`,
+            roulettes: maqueta.roulettes
+        };
+        StorageManager.saveGame(gameState);
+        showGame(gameState);
+        const questionCount = gameState.roulettes.reduce((total, roulette) => total + roulette.questions.length, 0);
+        alert(`TXT importado: ${questionCount} preguntas cargadas en ${gameState.roulettes.length} ruletas.`);
+    }
+
+    let pendingTextGame = null;
+    const maquetaDialog = document.getElementById("maqueta-picker");
+    const maquetaSelect = document.getElementById("maqueta-picker-select");
+
+    function chooseTextMaqueta(textGame) {
+        if (textGame.maquetas.length === 1) {
+            loadTextMaqueta(textGame, textGame.maquetas[0]);
+            return;
+        }
+
+        pendingTextGame = textGame;
+        maquetaSelect.replaceChildren(...textGame.maquetas.map(maqueta => {
+            const option = document.createElement("option");
+            option.value = maqueta.name;
+            option.textContent = maqueta.name;
+            return option;
+        }));
+        maquetaDialog.showModal();
+    }
+
+    document.getElementById("btn-cancel-maqueta").addEventListener("click", () => {
+        maquetaDialog.close();
+        pendingTextGame = null;
+    });
+
+    document.getElementById("btn-import-maqueta").addEventListener("click", () => {
+        const selectedMaqueta = pendingTextGame?.maquetas.find(maqueta => maqueta.name === maquetaSelect.value);
+        if (!pendingTextGame || !selectedMaqueta) return;
+
+        const textGame = pendingTextGame;
+        pendingTextGame = null;
+        maquetaDialog.close();
+        loadTextMaqueta(textGame, selectedMaqueta);
+    });
+
+    maquetaDialog.addEventListener("cancel", () => {
+        pendingTextGame = null;
+    });
 
     document.getElementById("btn-goto-setup").addEventListener("click", () => {
         setupDefaultConfigForm();
@@ -127,11 +195,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const reader = new FileReader();
                 reader.onload = () => {
                     try {
-                        const gameState = parseTextGame(String(reader.result || ""), file.name);
-                        StorageManager.saveGame(gameState);
-                        showGame(gameState);
-                        const questionCount = gameState.roulettes.reduce((total, roulette) => total + roulette.questions.length, 0);
-                        alert(`TXT importado: ${questionCount} preguntas cargadas en ${gameState.roulettes.length} ruletas.`);
+                        const textGame = parseTextGame(String(reader.result || ""), file.name);
+                        chooseTextMaqueta(textGame);
                     } catch (error) {
                         alert(`No se pudo importar el TXT: ${error.message}`);
                     }

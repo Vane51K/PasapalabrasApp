@@ -1,0 +1,524 @@
+MAQUETA: 2
+RULETA: Equipo 1
+LETRA: A
+PREGUNTA: ¿Quién fue el padre de Isaac?
+RESPUESTA: Abraham
+CITA BÍBLICA: Génesis 21:3-5
+
+MAQUETA: 2
+RULETA: Equipo 2
+LETRA: B
+PREGUNTA: ¿Qué hombre fue contratado para maldecir a Israel, pero terminó bendiciéndolo?
+RESPUESTA: Balaam
+CITA BÍBLICA: Números 22:5-6; 23:11-12
+
+MAQUETA: 2
+RULETA: Equipo 3
+LETRA: C
+PREGUNTA: ¿Qué centurión romano recibió la visita del apóstol Pedro?
+RESPUESTA: Cornelio
+CITA BÍBLICA: Hechos 10:1-5
+
+MAQUETA: 2
+RULETA: Equipo 4
+LETRA: D
+PREGUNTA: ¿Qué mujer juzgaba a Israel y acompañó a Barac?
+RESPUESTA: Débora
+CITA BÍBLICA: Jueces 4:4-6
+
+MAQUETA: 2
+RULETA: Equipo 5
+LETRA: E
+PREGUNTA: ¿Qué profeta hizo flotar la cabeza de un hacha?
+RESPUESTA: Eliseo
+CITA BÍBLICA: 2 Reyes 6:1-7
+
+MAQUETA: 2
+RULETA: Equipo 1
+LETRA: F
+PREGUNTA: ¿Qué discípulo anunció el evangelio al funcionario etíope?
+RESPUESTA: Felipe
+CITA BÍBLICA: Hechos 8:26-35
+
+MAQUETA: 2
+RULETA: Equipo 2
+LETRA: G
+PREGUNTA: ¿Qué ángel anunció a María el nacimiento de Jesús?
+RESPUESTA: Gabriel
+CITA BÍBLICA: Lucas 1:26-31
+
+MAQUETA: 2
+RULETA: Equipo 3
+LETRA: H
+PREGUNTA: ¿Qué profeta preguntó por qué Dios permitía la injusticia?
+RESPUESTA: Habacuc
+CITA BÍBLICA: Habacuc 1:2-4
+
+MAQUETA: 2
+RULETA: Equipo 4
+LETRA: I
+PREGUNTA: ¿Cómo se llamó el hijo de Abraham con Agar?
+RESPUESTA: Ismael
+CITA BÍBLICA: Génesis 16:15
+
+MAQUETA: 2
+RULETA: Equipo 5
+LETRA: J
+PREGUNTA: ¿Cómo se llamaba el suegro de Moisés?
+RESPUESTA: Jetro
+CITA BÍBLICA: Éxodo 3:1; 2:18
+
+MAQUETA: 2
+RULETA: Equipo 1
+LETRA: L
+PREGUNTA: ¿Qué mujer de Filipos vendía púrpura y escuchó a Pablo?
+RESPUESTA: Lidia
+CITA BÍBLICA: Hechos 16:14-15
+
+MAQUETA: 2
+RULETA: Equipo 2
+LETRA: M
+PREGUNTA: ¿Cómo se llamaba la hermana de Moisés?
+RESPUESTA: Miriam
+CITA BÍBLICA: Éxodo 15:20; Números 26:59
+
+MAQUETA: 2
+RULETA: Equipo 3
+LETRA: N
+PREGUNTA: ¿Qué profeta confrontó al rey David después de su pecado con Betsabé?
+RESPUESTA: Natán
+CITA BÍBLICA: 2 Samuel 12:1-7
+
+MAQUETA: 2
+RULETA: Equipo 4
+LETRA: O
+PREGUNTA: ¿Cómo se llamó el hijo de Rut y Booz, abuelo de David?
+RESPUESTA: Obed
+CITA BÍBLICA: Rut 4:13-17
+
+MAQUETA: 2
+RULETA: Equipo 5
+LETRA: P
+PREGUNTA: ¿Qué mujer, junto con Aquila, explicó más exactamente el camino de Dios a Apolos?
+RESPUESTA: Priscila
+CITA BÍBLICA: Hechos 18:24-26
+
+MAQUETA: 2
+RULETA: Equipo 1
+LETRA: Q
+PREGUNTA: ¿Qué ciudad estuvo relacionada con el lugar donde permaneció el arca antes de ser llevada a Jerusalén?
+RESPUESTA: Quiriat-jearim
+CITA BÍBLICA: 1 Samuel 7:1-2; 2 Samuel 6:2-3
+
+MAQUETA: 2
+RULETA: Equipo 2
+LETRA: R
+PREGUNTA: ¿Qué mujer moabita decidió acompañar a Noemí?
+RESPUESTA: Rut
+CITA BÍBLICA: Rut 1:16-17
+
+MAQUETA: 2
+RULETA: Equipo 3
+LETRA: S
+PREGUNTA: ¿Quién fue el primer rey de Israel?
+RESPUESTA: Saúl
+CITA BÍBLICA: 1 Samuel 10:1, 24
+
+MAQUETA: 2
+RULETA: Equipo 4
+LETRA: T
+PREGUNTA: ¿Qué joven colaborador de Pablo recibió dos cartas del Nuevo Testamento?
+RESPUESTA: Timoteo
+CITA BÍBLICA: 1 Timoteo 1:2; 2 Timoteo 1:5
+
+MAQUETA: 2
+RULETA: Equipo 5
+LETRA: U
+PREGUNTA: ¿Qué rey de Judá fue herido con lepra después de intentar quemar incienso en el templo?
+RESPUESTA: Uzías
+CITA BÍBLICA: 2 Crónicas 26:16-21
+
+MAQUETA: 2
+RULETA: Equipo 1
+LETRA: V
+PREGUNTA: ¿Cómo se llama la mujer cuyo esposo ha muerto?
+RESPUESTA: Viuda
+CITA BÍBLICA: Lucas 7:12
+
+MAQUETA: 2
+RULETA: Equipo 2
+LETRA: X
+PREGUNTA: ¿Cuál es el segundo libro de la Biblia?
+RESPUESTA: Éxodo
+CITA BÍBLICA: Éxodo 1:1
+
+MAQUETA: 2
+RULETA: Equipo 3
+LETRA: Y
+PREGUNTA: ¿Qué cargo tenía Eliezer en la casa de Abraham, según Génesis 15:2?
+RESPUESTA: Mayordomo
+CITA BÍBLICA: Génesis 15:2
+
+MAQUETA: 2
+RULETA: Equipo 4
+LETRA: Z
+PREGUNTA: ¿Qué hombre se subió a un sicómoro para ver a Jesús?
+RESPUESTA: Zaqueo
+CITA BÍBLICA: Lucas 19:1-4
+
+MAQUETA: 2
+RULETA: Equipo 5
+LETRA: W
+PREGUNTA: SORPRESA: ¿Quién crió a Ester como si fuera su hija?
+RESPUESTA: Mardoqueo
+CITA BÍBLICA: Ester 2:7
+
+MAQUETA: 3
+RULETA: Equipo 1
+LETRA: A
+PREGUNTA: ¿Qué hombre escondió parte del botín de Jericó y fue descubierto por Josué?
+RESPUESTA: Acán
+CITA BÍBLICA: Josué 7:1, 19-21
+
+MAQUETA: 3
+RULETA: Equipo 2
+LETRA: B
+PREGUNTA: ¿En qué ciudad nació Jesús?
+RESPUESTA: Belén
+CITA BÍBLICA: Lucas 2:4-7
+
+MAQUETA: 3
+RULETA: Equipo 3
+LETRA: C
+PREGUNTA: ¿Quién fue el primer hombre que mató a su hermano?
+RESPUESTA: Caín
+CITA BÍBLICA: Génesis 4:8
+
+MAQUETA: 3
+RULETA: Equipo 4
+LETRA: D
+PREGUNTA: ¿Quién derrotó al gigante Goliat?
+RESPUESTA: David
+CITA BÍBLICA: 1 Samuel 17:49-50
+
+MAQUETA: 3
+RULETA: Equipo 5
+LETRA: E
+PREGUNTA: ¿Qué profeta fue llevado al cielo en un torbellino?
+RESPUESTA: Elías
+CITA BÍBLICA: 2 Reyes 2:11
+
+MAQUETA: 3
+RULETA: Equipo 1
+LETRA: F
+PREGUNTA: ¿A qué cristiano escribió Pablo una carta para pedirle que recibiera a Onésimo?
+RESPUESTA: Filemón
+CITA BÍBLICA: Filemón 1:8-17
+
+MAQUETA: 3
+RULETA: Equipo 2
+LETRA: G
+PREGUNTA: ¿Cómo se llamaba el gigante filisteo derrotado por David?
+RESPUESTA: Goliat
+CITA BÍBLICA: 1 Samuel 17:4, 49-50
+
+MAQUETA: 3
+RULETA: Equipo 3
+LETRA: H
+PREGUNTA: ¿Qué profeta animó al pueblo a reconstruir el templo después del exilio?
+RESPUESTA: Hageo
+CITA BÍBLICA: Hageo 1:1-8, 12
+
+MAQUETA: 3
+RULETA: Equipo 4
+LETRA: I
+PREGUNTA: ¿Cómo se llamó el hijo de Abraham y Sara?
+RESPUESTA: Isaac
+CITA BÍBLICA: Génesis 21:2-3
+
+MAQUETA: 3
+RULETA: Equipo 5
+LETRA: J
+PREGUNTA: ¿Qué profeta fue enviado a Nínive y terminó dentro de un gran pez?
+RESPUESTA: Jonás
+CITA BÍBLICA: Jonás 1:1-3, 17; 2:1
+
+MAQUETA: 3
+RULETA: Equipo 1
+LETRA: L
+PREGUNTA: ¿Qué compañero de Pablo fue médico y escribió un Evangelio?
+RESPUESTA: Lucas
+CITA BÍBLICA: Colosenses 4:14; Lucas 1:1-4
+
+MAQUETA: 3
+RULETA: Equipo 2
+LETRA: M
+PREGUNTA: ¿Qué mujer fue madre de Jesús?
+RESPUESTA: María
+CITA BÍBLICA: Lucas 1:30-31
+
+MAQUETA: 3
+RULETA: Equipo 3
+LETRA: N
+PREGUNTA: ¿Qué general sirio fue sanado de lepra al obedecer las instrucciones de Eliseo?
+RESPUESTA: Naamán
+CITA BÍBLICA: 2 Reyes 5:9-14
+
+MAQUETA: 3
+RULETA: Equipo 4
+LETRA: O
+PREGUNTA: ¿Qué rey de Basán se enfrentó a Israel?
+RESPUESTA: Og
+CITA BÍBLICA: Deuteronomio 3:1-3
+
+MAQUETA: 3
+RULETA: Equipo 5
+LETRA: P
+PREGUNTA: ¿Qué apóstol caminó sobre el agua hacia Jesús?
+RESPUESTA: Pedro
+CITA BÍBLICA: Mateo 14:28-31
+
+MAQUETA: 3
+RULETA: Equipo 1
+LETRA: Q
+PREGUNTA: ¿Qué ciudad de refugio estaba en la región de Galilea, en el territorio de Neftalí?
+RESPUESTA: Quedes
+CITA BÍBLICA: Josué 20:7; 21:32 (RVR1960: Cedes)
+
+MAQUETA: 3
+RULETA: Equipo 2
+LETRA: R
+PREGUNTA: ¿Qué mujer fue esposa de Isaac y madre de Jacob y Esaú?
+RESPUESTA: Rebeca
+CITA BÍBLICA: Génesis 24:67; 25:21-26
+
+MAQUETA: 3
+RULETA: Equipo 3
+LETRA: S
+PREGUNTA: ¿Qué hijo de David llegó a ser rey y construyó el templo?
+RESPUESTA: Salomón
+CITA BÍBLICA: 1 Reyes 6:1; 1 Crónicas 22:9-10
+
+MAQUETA: 3
+RULETA: Equipo 4
+LETRA: T
+PREGUNTA: ¿Qué discípulo era conocido como “el gemelo”?
+RESPUESTA: Tomás
+CITA BÍBLICA: Juan 20:24
+
+MAQUETA: 3
+RULETA: Equipo 5
+LETRA: U
+PREGUNTA: ¿Cómo se llamaba también el suegro de Moisés, según Éxodo 2:18?
+RESPUESTA: Reuel
+CITA BÍBLICA: Éxodo 2:18
+
+MAQUETA: 3
+RULETA: Equipo 1
+LETRA: V
+PREGUNTA: ¿Qué libro bíblico reúne muchos dichos de sabiduría atribuidos a Salomón?
+RESPUESTA: Proverbios
+CITA BÍBLICA: Proverbios 1:1-7
+
+MAQUETA: 3
+RULETA: Equipo 2
+LETRA: X
+PREGUNTA: ¿Qué término bíblico describe el medio por el cual se cubrían los pecados mediante sacrificios?
+RESPUESTA: Expiación
+CITA BÍBLICA: Levítico 16:30
+
+MAQUETA: 3
+RULETA: Equipo 3
+LETRA: Y
+PREGUNTA: ¿Qué título recibe un gobernante de un reino?
+RESPUESTA: Rey
+CITA BÍBLICA: Apocalipsis 19:16
+
+MAQUETA: 3
+RULETA: Equipo 4
+LETRA: Z
+PREGUNTA: ¿Qué sacerdote fue padre de Juan el Bautista?
+RESPUESTA: Zacarías
+CITA BÍBLICA: Lucas 1:5-13
+
+MAQUETA: 3
+RULETA: Equipo 5
+LETRA: W
+PREGUNTA: SORPRESA: ¿Quién interpretó los sueños del faraón y llegó a gobernar en Egipto?
+RESPUESTA: José
+CITA BÍBLICA: Génesis 41:14-16, 25-41
+
+MAQUETA: 4
+RULETA: Equipo 1
+LETRA: A
+PREGUNTA: ¿Qué mujer inteligente fue esposa de Nabal y después esposa de David?
+RESPUESTA: Abigail
+CITA BÍBLICA: 1 Samuel 25:3, 32-42
+
+MAQUETA: 4
+RULETA: Equipo 2
+LETRA: B
+PREGUNTA: ¿Qué hombre, conocido como hijo de consolación, acompañó a Pablo en su ministerio?
+RESPUESTA: Bernabé
+CITA BÍBLICA: Hechos 4:36; 9:26-27
+
+MAQUETA: 4
+RULETA: Equipo 3
+LETRA: C
+PREGUNTA: ¿A quién apeló Pablo cuando defendió sus derechos como ciudadano romano?
+RESPUESTA: César
+CITA BÍBLICA: Hechos 25:10-12
+
+MAQUETA: 4
+RULETA: Equipo 4
+LETRA: D
+PREGUNTA: ¿Qué profeta vio al Señor sentado en un trono alto y sublime?
+RESPUESTA: Daniel
+CITA BÍBLICA: Daniel 2:26-28; 4:18-19
+
+MAQUETA: 4
+RULETA: Equipo 5
+LETRA: E
+PREGUNTA: ¿Qué mujer llegó a ser reina y arriesgó su vida para salvar a su pueblo?
+RESPUESTA: Ester
+CITA BÍBLICA: Ester 4:13-16
+
+MAQUETA: 4
+RULETA: Equipo 1
+LETRA: F
+PREGUNTA: ¿Cómo se llamaba el título del rey de Egipto en la época de Moisés?
+RESPUESTA: Faraón
+CITA BÍBLICA: Éxodo 1:11-14; 5:1
+
+MAQUETA: 4
+RULETA: Equipo 2
+LETRA: G
+PREGUNTA: ¿Qué juez derrotó a los madianitas con solo trescientos hombres?
+RESPUESTA: Gedeón
+CITA BÍBLICA: Jueces 7:2-7
+
+MAQUETA: 4
+RULETA: Equipo 3
+LETRA: H
+PREGUNTA: ¿Qué rey ordenó matar a los niños de Belén después de oír sobre el nacimiento de Jesús?
+RESPUESTA: Herodes
+CITA BÍBLICA: Mateo 2:16
+
+MAQUETA: 4
+RULETA: Equipo 4
+LETRA: I
+PREGUNTA: ¿Qué profeta vio al Señor en una visión y dijo: “¡Ay de mí!”?
+RESPUESTA: Isaías
+CITA BÍBLICA: Isaías 6:1-5
+
+MAQUETA: 4
+RULETA: Equipo 5
+LETRA: J
+PREGUNTA: ¿Qué hombre luchó con un ángel y recibió el nombre de Israel?
+RESPUESTA: Jacob
+CITA BÍBLICA: Génesis 32:24-28
+
+MAQUETA: 4
+RULETA: Equipo 1
+LETRA: L
+PREGUNTA: ¿Qué amigo de Jesús fue resucitado después de estar cuatro días en el sepulcro?
+RESPUESTA: Lázaro
+CITA BÍBLICA: Juan 11:38-44
+
+MAQUETA: 4
+RULETA: Equipo 2
+LETRA: M
+PREGUNTA: ¿Qué profeta fue hermano de Aarón y guio a Israel fuera de Egipto?
+RESPUESTA: Moisés
+CITA BÍBLICA: Éxodo 3:10; 4:14
+
+MAQUETA: 4
+RULETA: Equipo 3
+LETRA: N
+PREGUNTA: ¿Qué hombre construyó un arca para salvar a su familia del diluvio?
+RESPUESTA: Noé
+CITA BÍBLICA: Génesis 6:13-22
+
+MAQUETA: 4
+RULETA: Equipo 4
+LETRA: O
+PREGUNTA: ¿Cómo se llamaba el esclavo de Filemón por quien Pablo intercedió en una carta?
+RESPUESTA: Onésimo
+CITA BÍBLICA: Filemón 1:10-16
+
+MAQUETA: 4
+RULETA: Equipo 5
+LETRA: P
+PREGUNTA: ¿Qué apóstol escribió muchas cartas a las iglesias del Nuevo Testamento?
+RESPUESTA: Pablo
+CITA BÍBLICA: Romanos 1:1; 1 Corintios 1:1; 2 Pedro 3:15-16
+
+MAQUETA: 4
+RULETA: Equipo 1
+LETRA: Q
+PREGUNTA: ¿Cómo se llamaba antiguamente la ciudad de Hebrón?
+RESPUESTA: Quiriat-arba
+CITA BÍBLICA: Génesis 23:2; Josué 14:15
+
+MAQUETA: 4
+RULETA: Equipo 2
+LETRA: R
+PREGUNTA: ¿Qué mujer fue madre de José y Benjamín?
+RESPUESTA: Raquel
+CITA BÍBLICA: Génesis 35:16-18, 24
+
+MAQUETA: 4
+RULETA: Equipo 3
+LETRA: S
+PREGUNTA: ¿Qué juez perdió su fuerza cuando le cortaron el cabello?
+RESPUESTA: Sansón
+CITA BÍBLICA: Jueces 16:17-21
+
+MAQUETA: 4
+RULETA: Equipo 4
+LETRA: T
+PREGUNTA: ¿A quién dejó Pablo en Creta para corregir lo deficiente y establecer ancianos?
+RESPUESTA: Tito
+CITA BÍBLICA: Tito 1:4-5
+
+MAQUETA: 4
+RULETA: Equipo 5
+LETRA: U
+PREGUNTA: ¿Cómo se llamaba el esposo de Betsabé, que murió en la batalla?
+RESPUESTA: Urías
+CITA BÍBLICA: 2 Samuel 11:3-17
+
+MAQUETA: 4
+RULETA: Equipo 1
+LETRA: V
+PREGUNTA: ¿Qué palabra expresa lo que Dios desea que hagamos, como se menciona en Romanos 12:2?
+RESPUESTA: Voluntad
+CITA BÍBLICA: Romanos 12:2
+
+MAQUETA: 4
+RULETA: Equipo 2
+LETRA: X
+PREGUNTA: ¿Qué hizo Jesús con los vendedores y cambistas que estaban en el templo?
+RESPUESTA: Expulsó
+CITA BÍBLICA: Juan 2:13-16
+
+MAQUETA: 4
+RULETA: Equipo 3
+LETRA: Y
+PREGUNTA: ¿Qué animal de trabajo se menciona junto con el asno en los mandamientos?
+RESPUESTA: Buey
+CITA BÍBLICA: Éxodo 20:17
+
+MAQUETA: 4
+RULETA: Equipo 4
+LETRA: Z
+PREGUNTA: ¿Quién dirigió al pueblo junto con Josué en la reconstrucción del templo después del exilio?
+RESPUESTA: Zorobabel
+CITA BÍBLICA: Esdras 3:2, 8; Hageo 1:1, 12-14
+
+MAQUETA: 4
+RULETA: Equipo 5
+LETRA: W
+PREGUNTA: SORPRESA: ¿Qué mujer escondió a los espías israelitas en Jericó?
+RESPUESTA: Rahab
+CITA BÍBLICA: Josué 2:1-6

@@ -567,6 +567,59 @@ body {
     margin-top: 1.75rem;
 }
 
+.maqueta-picker {
+    width: min(calc(100% - 2rem), 440px);
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+.maqueta-picker::backdrop {
+    background: rgba(11, 11, 15, 0.82);
+}
+
+.maqueta-picker-panel {
+    padding: 1.75rem;
+}
+
+.maqueta-picker-panel h2 {
+    margin-bottom: 0.65rem;
+    color: var(--primary);
+}
+
+.maqueta-picker-panel p {
+    margin-bottom: 1.25rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.maqueta-picker-panel label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+}
+
+.maqueta-picker-panel select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font: inherit;
+}
+
+.maqueta-picker-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
 @media (max-width: 700px) {
     .wildcards-placeholder {
         grid-template-columns: 1fr;
@@ -602,5 +655,9 @@ body {
 
     .bible-session-timer {
         font-size: 2.75rem;
+    }
+
+    .maqueta-picker-panel {
+        padding: 1.25rem;
     }
 }
