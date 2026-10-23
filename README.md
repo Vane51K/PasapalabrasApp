@@ -31,7 +31,11 @@ RESPUESTA: Estrellas
 
 La aplicación muestra **EMPIEZA POR** si la respuesta comienza con la letra y **CONTIENE** si la incluye en otra posición. Una letra puede repetirse entre equipos, pero no dentro de la misma ruleta.
 
-`CITA:` es opcional. Si la incluyes, la referencia se mantiene oculta hasta activar **Usar la Biblia**; entonces aparece en grande durante 60 segundos. El contador se puede pausar, reanudar o terminar antes para responder.
+`CITA:` y `CITA BÍBLICA:` son etiquetas opcionales equivalentes. Si incluyes una, la referencia se mantiene oculta hasta activar **Usar la Biblia**; entonces aparece en grande durante 60 segundos. El contador se puede pausar, reanudar o terminar antes para responder.
+
+Las preguntas sorpresa de la letra W pueden marcarse con `PREGUNTA: SORPRESA: ...`; en ese caso, la respuesta no necesita contener W. En los demás bloques, la respuesta debe empezar o contener la letra indicada.
+
+Los archivos `RULETA Equipo .txt`, `RULETA Maqueta 3.txt` y `RULETA Maqueta 4.txt` son tres partidas distintas. Importa un solo archivo por partida; cada uno contiene cinco ruletas/equipos con cinco preguntas cada uno.
 
 ## Partidas guardadas
 
@@ -40,7 +44,7 @@ El progreso se guarda en el almacenamiento local del navegador. Solo está dispo
 ## Contenido
 
 - `MANUAL_DE_USUARIO_PASAPALABRAS.pdf`: manual de usuario.
-- `RULETA Equipo .txt`: preguntas de ejemplo para importar.
+- `RULETA Equipo .txt`, `RULETA Maqueta 3.txt`, `RULETA Maqueta 4.txt`: tres maquetas de preguntas para importar por separado.
 - `img/`, `css/`, `js/`: recursos y código de la aplicación.
 
 ## Licencia

@@ -41,12 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const lines = block.split("\n").map(line => line.trim()).filter(Boolean);
 
             for (const line of lines) {
-                const match = line.match(/^(RULETA|LETRA|PREGUNTA|RESPUESTA|CITA)\s*:\s*(.*)$/i);
+                const match = line.match(/^(RULETA|LETRA|PREGUNTA|RESPUESTA|CITA(?:\s+BÍBLICA)?)\s*:\s*(.*)$/i);
                 if (!match) {
-                    throw new Error(`Bloque ${index + 1}: usa RULETA:, LETRA:, PREGUNTA:, RESPUESTA: y, opcionalmente, CITA:.`);
+                    throw new Error(`Bloque ${index + 1}: usa RULETA:, LETRA:, PREGUNTA:, RESPUESTA: y, opcionalmente, CITA: o CITA BÍBLICA:.`);
                 }
 
-                const field = match[1].toLocaleLowerCase("es");
+                const label = match[1].toLocaleLowerCase("es");
+                const field = label.startsWith("cita") ? "cita" : label;
                 if (Object.hasOwn(fields, field)) {
                     throw new Error(`Bloque ${index + 1}: la etiqueta ${match[1].toUpperCase()} está repetida.`);
                 }
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
             roulette.usedLetters.add(letra);
 
             const pista = getAnswerHint(letra, fields.respuesta);
-            if (!pista) {
+            const isSurprise = letra === "W" && /^SORPRESA\s*:/i.test(fields.pregunta);
+            if (!pista && !isSurprise) {
                 throw new Error(`Bloque ${index + 1}: la respuesta no empieza ni contiene la letra ${letra}.`);
             }
 
@@ -87,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pregunta: fields.pregunta,
                 respuesta: fields.respuesta,
                 cita: fields.cita || "",
-                pista,
+                pista: pista || "",
                 status: "pending"
             });
         });

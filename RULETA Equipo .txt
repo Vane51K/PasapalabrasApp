@@ -1,235 +1,149 @@
-RULETA: Equipo 1
+RULETA: 1
 LETRA: A
-PREGUNTA: Primer hombre creado por Dios
-RESPUESTA: Adán
+PREGUNTA: ¿Quién fue el padre de Isaac?
+RESPUESTA: Abraham
+CITA: Génesis 21:3-5
 
-RULETA: Equipo 1
+RULETA: 2
 LETRA: B
-PREGUNTA: Libro sagrado de los cristianos
-RESPUESTA: Biblia
+PREGUNTA: ¿Qué hombre fue contratado para maldecir a Israel, pero terminó bendiciéndolo?
+RESPUESTA: Balaam
+CITA: Números 22:5-6; 23:11-12
 
-RULETA: Equipo 1
+RULETA: 3
 LETRA: C
-PREGUNTA: Hijo de Adán y Eva que mató a su hermano
-RESPUESTA: Caín
+PREGUNTA: ¿Qué centurión romano recibió la visita del apóstol Pedro?
+RESPUESTA: Cornelio
+CITA: Hechos 10:1-5
 
-RULETA: Equipo 1
+RULETA: 4
 LETRA: D
-PREGUNTA: Rey que derrotó al gigante Goliat
-RESPUESTA: David
+PREGUNTA: ¿Qué mujer juzgaba a Israel y acompañó a Barac?
+RESPUESTA: Débora
+CITA: Jueces 4:4-6
 
-RULETA: Equipo 1
+RULETA: 5
 LETRA: E
-PREGUNTA: Discípulo que traicionó a Jesús
-RESPUESTA: Judas Iscariote
+PREGUNTA: ¿Qué profeta hizo flotar la cabeza de un hacha?
+RESPUESTA: Eliseo
+CITA: 2 Reyes 6:1-7
 
-RULETA: Equipo 1
+RULETA: 1
 LETRA: F
-PREGUNTA: Virtud que nos permite confiar en Dios
-RESPUESTA: Fe
+PREGUNTA: ¿Qué discípulo anunció el evangelio al funcionario etíope?
+RESPUESTA: Felipe
+CITA: Hechos 8:26-35
 
-RULETA: Equipo 1
+RULETA: 2
 LETRA: G
-PREGUNTA: Gigante derrotado por David
-RESPUESTA: Goliat
+PREGUNTA: ¿Qué ángel anunció a María el nacimiento de Jesús?
+RESPUESTA: Gabriel
+CITA: Lucas 1:26-31
 
-RULETA: Equipo 1
+RULETA: 3
 LETRA: H
-PREGUNTA: Libro del Nuevo Testamento que habla de la fe y las obras
-RESPUESTA: Hebreos
+PREGUNTA: ¿Qué profeta preguntó por qué Dios permitía la injusticia?
+RESPUESTA: Habacuc
+CITA: Habacuc 1:2-4
 
-RULETA: Equipo 1
+RULETA: 4
 LETRA: I
-PREGUNTA: Hijo de Abraham y Sara
-RESPUESTA: Isaac
+PREGUNTA: ¿Cómo se llamó el hijo de Abraham con Agar?
+RESPUESTA: Ismael
+CITA: Génesis 16:15
 
-RULETA: Equipo 1
+RULETA: 5
 LETRA: J
-PREGUNTA: Hombre que fue tragado por un gran pez
-RESPUESTA: Jonás
+PREGUNTA: ¿Cómo se llamaba el suegro de Moisés?
+RESPUESTA: Jetro
+CITA: Éxodo 3:1; 2:18
 
-RULETA: Equipo 1
-LETRA: K
-PREGUNTA: Palabra en inglés que significa rey
-RESPUESTA: King
-
-RULETA: Equipo 1
+RULETA: 1
 LETRA: L
-PREGUNTA: Hombre que Jesús resucitó después de cuatro días
-RESPUESTA: Lázaro
+PREGUNTA: ¿Qué mujer de Filipos vendía púrpura y escuchó a Pablo?
+RESPUESTA: Lidia
+CITA: Hechos 16:14-15
 
-RULETA: Equipo 1
+RULETA: 2
 LETRA: M
-PREGUNTA: Hombre que guio a Israel fuera de Egipto
-RESPUESTA: Moisés
+PREGUNTA: ¿Cómo se llamaba la hermana de Moisés?
+RESPUESTA: Miriam
+CITA: Éxodo 15:20; Números 26:59
 
-RULETA: Equipo 1
+RULETA: 3
 LETRA: N
-PREGUNTA: Hombre que construyó un arca para el diluvio
-RESPUESTA: Noé
+PREGUNTA: ¿Qué profeta confrontó al rey David después de su pecado con Betsabé?
+RESPUESTA: Natán
+CITA: 2 Samuel 12:1-7
 
-RULETA: Equipo 1
+RULETA: 4
 LETRA: O
-PREGUNTA: ¿Qué debemos hacer con los mandamientos de Dios?
-RESPUESTA: Obedecer
+PREGUNTA: ¿Cómo se llamó el hijo de Rut y Booz, abuelo de David?
+RESPUESTA: Obed
+CITA: Rut 4:13-17
 
-RULETA: Equipo 1
+RULETA: 5
 LETRA: P
-PREGUNTA: Discípulo que negó a Jesús tres veces
-RESPUESTA: Pedro
+PREGUNTA: ¿Qué mujer, junto con Aquila, explicó más exactamente el camino de Dios a Apolos?
+RESPUESTA: Priscila
+CITA: Hechos 18:24-26
 
-RULETA: Equipo 1
+RULETA: 1
+LETRA: Q
+PREGUNTA: ¿Qué ciudad estuvo relacionada con el lugar donde permaneció el arca antes de ser llevada a Jerusalén?
+RESPUESTA: Quiriat-jearim
+CITA: 1 Samuel 7:1-2; 2 Samuel 6:2-3
+
+RULETA: 2
 LETRA: R
-PREGUNTA: ¿Qué ocurrió con Jesús al tercer día de su muerte?
-RESPUESTA: Resucitó
+PREGUNTA: ¿Qué mujer moabita decidió acompañar a Noemí?
+RESPUESTA: Rut
+CITA: Rut 1:16-17
 
-RULETA: Equipo 1
+RULETA: 3
 LETRA: S
-PREGUNTA: Rey conocido por su sabiduría
-RESPUESTA: Salomón
-
-RULETA: Equipo 1
-LETRA: T
-PREGUNTA: Discípulo que dudó de la resurrección de Jesús
-RESPUESTA: Tomás
-
-RULETA: Equipo 1
-LETRA: U
-PREGUNTA: Lo contrario de división entre los creyentes
-RESPUESTA: Unidad
-
-RULETA: Equipo 1
-LETRA: V
-PREGUNTA: Jesús dijo: Yo soy el camino, la verdad y la...
-RESPUESTA: Vida
-
-RULETA: Equipo 1
-LETRA: W
-PREGUNTA: Palabra en inglés que significa adoración
-RESPUESTA: Worship
-
-RULETA: Equipo 1
-LETRA: X
-PREGUNTA: Instrumento musical de percusión cuyas láminas se golpean
-RESPUESTA: Xilófono
-
-RULETA: Equipo 1
-LETRA: Z
-PREGUNTA: Hombre que subió a un árbol para ver a Jesús
-RESPUESTA: Zaqueo
-
-
-RULETA: Equipo 2
-LETRA: A
-PREGUNTA: ¿Qué construyó Noé para sobrevivir al diluvio?
-RESPUESTA: Arca
-
-RULETA: Equipo 2
-LETRA: B
-PREGUNTA: ¿Qué debemos leer para conocer la Palabra de Dios?
-RESPUESTA: Biblia
-
-RULETA: Equipo 2
-LETRA: D
-PREGUNTA: ¿Quién tentó a Jesús en el desierto?
-RESPUESTA: Diablo
-
-RULETA: Equipo 2
-LETRA: E
-PREGUNTA: ¿Qué recibió Moisés en el monte Sinaí?
-RESPUESTA: Tablas de la Ley
-
-RULETA: Equipo 2
-LETRA: F
-PREGUNTA: ¿Qué debemos tener para agradar a Dios?
-RESPUESTA: Fe
-
-RULETA: Equipo 2
-LETRA: G
-PREGUNTA: Jardín donde Jesús oró antes de ser arrestado
-RESPUESTA: Getsemaní
-
-RULETA: Equipo 2
-LETRA: H
-PREGUNTA: Gobernante que ordenó la muerte de Juan el Bautista
-RESPUESTA: Herodes
-
-RULETA: Equipo 2
-LETRA: I
-PREGUNTA: Hijo de Abraham que Dios le prometió
-RESPUESTA: Isaac
-
-RULETA: Equipo 2
-LETRA: J
-PREGUNTA: Ciudad donde Jesús nació
-RESPUESTA: Belén de Judea
-
-RULETA: Equipo 2
-LETRA: K
-PREGUNTA: Palabra en inglés que significa rey
-RESPUESTA: King
-
-RULETA: Equipo 2
-LETRA: L
-PREGUNTA: Evangelista que escribió el libro de Hechos
-RESPUESTA: Lucas
-
-RULETA: Equipo 2
-LETRA: M
-PREGUNTA: Alimento que cayó del cielo para Israel en el desierto
-RESPUESTA: Maná
-
-RULETA: Equipo 2
-LETRA: N
-PREGUNTA: Ciudad a la que fue enviado Jonás a predicar
-RESPUESTA: Nínive
-
-RULETA: Equipo 2
-LETRA: O
-PREGUNTA: ¿Qué debemos hacer con la voluntad de Dios?
-RESPUESTA: Obedecer
-
-RULETA: Equipo 2
-LETRA: P
-PREGUNTA: Apóstol que predicó durante Pentecostés
-RESPUESTA: Pedro
-
-RULETA: Equipo 2
-LETRA: R
-PREGUNTA: ¿Qué debemos hacer por nuestros enemigos?
-RESPUESTA: Orar
-
-RULETA: Equipo 2
-LETRA: S
-PREGUNTA: Primer rey de Israel
+PREGUNTA: ¿Quién fue el primer rey de Israel?
 RESPUESTA: Saúl
+CITA: 1 Samuel 10:1, 24
 
-RULETA: Equipo 2
+RULETA: 4
 LETRA: T
-PREGUNTA: Instrumentos que se tocaron antes de que cayeran los muros de Jericó
-RESPUESTA: Trompetas
+PREGUNTA: ¿Qué joven colaborador de Pablo recibió dos cartas del Nuevo Testamento?
+RESPUESTA: Timoteo
+CITA: 1 Timoteo 1:2; 2 Timoteo 1:5
 
-RULETA: Equipo 2
+RULETA: 5
 LETRA: U
-PREGUNTA: ¿Qué debemos mantener entre los creyentes?
-RESPUESTA: Unidad
+PREGUNTA: ¿Qué rey de Judá fue herido con lepra después de intentar quemar incienso en el templo?
+RESPUESTA: Uzías
+CITA: 2 Crónicas 26:16-21
 
-RULETA: Equipo 2
+RULETA: 1
 LETRA: V
-PREGUNTA: Planta que Jesús utilizó para explicar que debemos permanecer en Él
-RESPUESTA: Vid
+PREGUNTA: ¿Cómo se llama la mujer cuyo esposo ha muerto?
+RESPUESTA: Viuda
+CITA: Lucas 7:12
 
-RULETA: Equipo 2
-LETRA: W
-PREGUNTA: Palabra en inglés que significa testigo
-RESPUESTA: Witness
-
-RULETA: Equipo 2
+RULETA: 2
 LETRA: X
-PREGUNTA: Instrumento musical de láminas que contiene la letra X
-RESPUESTA: Xilófono
+PREGUNTA: ¿Cuál es el segundo libro de la Biblia?
+RESPUESTA: Éxodo
+CITA: Éxodo 1:1
 
-RULETA: Equipo 2
+RULETA: 3
+LETRA: Y
+PREGUNTA: ¿Qué cargo tenía Eliezer en la casa de Abraham, según Génesis 15:2?
+RESPUESTA: Mayordomo
+CITA: Génesis 15:2
+
+RULETA: 4
 LETRA: Z
-PREGUNTA: Hombre que recibió a Jesús con alegría en su casa
+PREGUNTA: ¿Qué hombre se subió a un sicómoro para ver a Jesús?
 RESPUESTA: Zaqueo
+CITA: Lucas 19:1-4
+
+RULETA: 5
+LETRA: W
+PREGUNTA: SORPRESA: ¿Quién crió a Ester como si fuera su hija?
+RESPUESTA: Mardoqueo
+CITA: Ester 2:7
